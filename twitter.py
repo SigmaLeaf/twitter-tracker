@@ -9,14 +9,14 @@ def getSearchJSON(keyword, multiplier):
 	a = []
 	for tweet in list_of_tweets:
 		e = {}
-		e['user'] 		= tweet.user
-		e['fullname'] 	= tweet.fullname
-		e['id'] 		= tweet.id
-		e['url'] 		= tweet.url
-		e['timestamp'] 	= tweet.timestamp
-		e['replies'] 	= tweet.replies
-		e['likes'] 		= tweet.likes
-		e['html'] 		= tweet.html
+		e['user']		= tweet.user
+		e['fullname']	= tweet.fullname
+		e['id']			= tweet.id
+		e['url']		= tweet.url
+		e['timestamp']	= tweet.timestamp
+		e['replies']	= tweet.replies
+		e['likes']		= tweet.likes
+		e['html']		= tweet.html
 		a.append(e)
 	d = {'tweets': a }
 	return d
